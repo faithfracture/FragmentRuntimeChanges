@@ -2,6 +2,7 @@ package com.example.fragmentruntimechanges.fragmentruntimechanges;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +18,12 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     private String TAG = FRAG_1;
 
     private Button button;
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        Log.d(TAG, "onConfigurationChanged: " + newConfig);
+        super.onConfigurationChanged(newConfig);
+    }
 
     @Override
     public void onAttach(Context context) {
