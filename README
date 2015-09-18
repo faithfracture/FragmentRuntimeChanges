@@ -1,0 +1,12 @@
+Simple Android project consisting of a single Activity and a single Fragment.
+
+I use this app as a way to see what order things happen in regarding Activity and Fragment
+lifecycle calls during situations - Initial start up, orientation changes, app entering background,
+etc.
+
+There is a single button in the middle of the fragment. Tapping the button pushes a new instance
+of the same fragment type. Tapping the button again pops the second fragment.
+
+There is also a separate fragment layout file for landscape and portrait orientations.
+
+More to be added as the need arises.
